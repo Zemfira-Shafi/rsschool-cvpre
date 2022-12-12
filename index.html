@@ -1,66 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./sass/style.css" />
     <title>cv</title>
   </head>
   <body>
-    <header class="header">
+    <div class="gradient">
       <div class="container">
-        <div class="header-name">
-          <h1>Zemfira Shafigullina</h1>
-        </div>
+        <header class="header">
+          <nav class="nav">
+            <ul class="list header-list">
+              <li class="header-item">
+                <a href="#contacts" class="header-link">Contacts</a>
+              </li>
+              <li class="header-item">
+                <a href="#skills" class="header-link">Skills</a>
+              </li>
+              <li class="header-item">
+                <a href="#summary" class="header-link">Summary</a>
+              </li>
+              <li class="header-item">
+                <a href="#projects" class="header-link">Projects</a>
+              </li>
+              <li class="header-item">
+                <a href="#education" class="header-link">Education</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <section class="profile">
+          <img src="./assets/images/myphoto.JPG" alt="photo" class="photo" />
+          <div class="profile-name">
+            <h1>Zemfira Shafigullina</h1>
+            <p>Junior Front-End Developer</p>
+          </div>
+        </section>
       </div>
-    </header>
+    </div>
     <main class="main">
       <div class="container">
-        <section class="contacts">
-          <h2>Contacts</h2>
-          <ul class="contacts-list">
-            <li class="list-items">Phone:+7(927)4225-405</li>
-            <li class="list-items">E-mail: zemfirashafigullina@gmail.com</li>
-            <li class="list-items">Telegram: @ZemfiraShafi</li>
-            <li class="list-items">
-              <a href="https://github.com/Zemfira-Shafi" target="blank"
-                >GitHub</a
-              >
-            </li>
-          </ul>
-        </section>
-        <section class="summary">
-          <h2>About me</h2>
-          <p>
-            My goal is to complete the 'JavaScript/Front-end' course well and
-            get certificate. I am always energetic and eager to learn new
-            skills. My strengths are persistens and courage. I have a
-            hard-working nature. I am also great team player.
-          </p>
-        </section>
-        <section class="skills">
-          <h2>Skills</h2>
-          <ul class="skills-list">
-            <li class="list-items">HTML5</li>
-            <li class="list-items">CSS3</li>
-            <li class="list-items">Git/GitHub</li>
-            <li class="list-items">JavaScript basics</li>
-            <li class="list-items">VS Code, Sublime Text3</li>
-            <li class="list-items">Figma</li>
-          </ul>
-        </section>
-        <section class="education">
-          <h2>Education</h2>
-          <p>Institute of Economics Management and Low, 2009</p>
-        </section>
-        <section class="languages">
-          <h2>Languages</h2>
-          <p>Russian - fluent</p>
-          <p>English - A2</p>
-        </section>
+        <div class="main-container">
+          <section class="contacts" id="contacts">
+            <h2 class="section-title">Contacts</h2>
+            <ul class="section-list">
+              <li class="section-item location">Kazan, Russia</li>
+              <li class="section-item email">
+                Email:
+                <a href="mailto:zemfirashafigullina@gmail.com" title="email"
+                  >zemfirashafigullina@gmail.com</a
+                >
+              </li>
+              <li class="section-item github">
+                Github:
+                <a href="https://github.com/Zemfira-Shafi" title="github"
+                  >Zemfira-Shafi</a
+                >
+              </li>
+              <li class="section-item telegram">
+                Telegram:
+                <a href="https://t.me/ZemfiraShafi" title="telegram"
+                  >@ZemfiraShafi</a
+                >
+              </li>
+              <li class="section-item phone">
+                Phone: <a href="tel:+79274225405" title="phone">+79274225405</a>
+              </li>
+            </ul>
+          </section>
+          <section class="summary" id="summary">
+            <h2 class="section-title">Summary</h2>
+            <p>
+              My goal is to complete the 'JavaScript/Front-end' course well and
+              get certificate. I am always energetic and eager to learn new
+              skills. My strengths are persistens and courage. I have a
+              hard-working nature. I am also great team player.
+            </p>
+          </section>
+          <section class="skills" id="skills">
+            <h2 class="section-title">Skills</h2>
+            <ul class="section-list">
+              <li class="section-item">HTML5, CSS3, JavaScript</li>
+              <li class="section-item">GIT, Github</li>
+              <li class="section-item">Figma</li>
+            </ul>
+          </section>
+          <section class="code">
+            <h2 class="section-title">Code</h2>
+            <pre>
+              <code>function century(year) {
+                  if(year % 100 === 0){
+                    return Math.floor(year / 100);
+                  } else{
+                    return Math.floor(year / 100) + 1;
+                  }
+                }
+              </code>
+            </pre>
+          </section>
+          <section class="courses">
+            <h2 class="section-title">Courses</h2>
+          </section>
+          <section class="projects" id="projects">
+            <h2 class="section-title">Projects</h2>
+            <ul class="section-list">
+              <li class="section-item">
+                <a
+                  class="projects-link"
+                  target="_blank"
+                  href="https://rolling-scopes-school.github.io/zemfira-shafi-JSFE2022Q1/shelter/pages/main/"
+                  >Shelter</a
+                >
+              </li>
+              <li class="section-item">
+                <a
+                  class="projects-link"
+                  target="_blank"
+                  href="https://zemfira-shafi.github.io/museum/museum-adaptive/"
+                  >Museum</a
+                >
+              </li>
+              <li class="section-item">
+                <a
+                  class="projects-link"
+                  target="_blank"
+                  href="https://zemfira-shafi.github.io/vertical-slider/vertical-slider/"
+                  >Vertical-slider</a
+                >
+              </li>
+              <li class="section-item"></li>
+              <li class="section-item"></li>
+            </ul>
+          </section>
+          <section class="education" id="education">
+            <h2 class="section-title">Education</h2>
+            <p>Institute of Economics Management and Low, 2009</p>
+          </section>
+          <section class="english">
+            <h2 class="section-title">Languages</h2>
+            <ul class="section-list">
+              <li class="section-item">Russian - fluent</li>
+              <li class="section-item">English - A2</li>
+            </ul>
+          </section>
+        </div>
       </div>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div>
+            © 2022
+            <a href="https://github.com/Zemfira-Shafi" title="github"
+              >Zemfira-Shafi</a
+            >
+          </div>
+          <a href="https://rs.school/js-stage0/" class="rss-icon"></a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
