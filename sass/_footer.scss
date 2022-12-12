@@ -1,0 +1,29 @@
+.footer {
+  background-color: $color-background;
+  padding: 40px 0;
+  @include media-tablet {
+    padding: 20px 0px;
+  }
+}
+
+.rss-icon {
+  display: block;
+  color: $color-dark;
+  background-image: url(../assets/icons/rss.svg);
+  width: 121px;
+  height: 45px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  & a {
+    padding-left: 30px;
+  }
+  @include media-mobilesmall {
+    flex-direction: column;
+  }
+}

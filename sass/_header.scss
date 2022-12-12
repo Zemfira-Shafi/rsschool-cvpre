@@ -1,0 +1,19 @@
+.header {
+  padding: 40px 0px;
+  @include media-tablet {
+    padding: 20px 0px;
+  }
+}
+
+.header-list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-item {
+  margin-left: 20px;
+}
+
+.header-link {
+  color: $color-dark;
+}

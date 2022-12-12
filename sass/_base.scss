@@ -1,0 +1,84 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Georgia", sans-serif;
+  font-size: 1.6rem;
+  color: $color-primary;
+}
+
+h1 {
+  font-size: 4.3rem;
+  max-width: 400px;
+  color: $color-dark;
+  letter-spacing: 0.06em;
+}
+
+h2 {
+  color: $color-dark;
+  background-color: $color-light;
+  font-weight: 400;
+  width: 90%;
+  text-align: center;
+}
+
+.section-title {
+  margin-bottom: 20px;
+}
+
+.section-item {
+  margin-bottom: 10px;
+  & a {
+    color: $color-light;
+    &:hover {
+      color: $color-dark;
+      transition: all 0.3s ease-out;
+    }
+  }
+}
+
+.container {
+  max-width: $content-width;
+  margin: auto;
+  @include media-laptop {
+    padding: 0 20px;
+  }
+  @include media-tablet {
+    padding: 0 30px;
+  }
+  @include media-mobile {
+    padding: 0 20px;
+  }
+  @include media-mobilesmall {
+    padding: 0 10px;
+  }
+}
+
+.main-container {
+  padding: 60px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  & section {
+    width: 50%;
+  }
+}
+
+.gradient {
+  background-color: $color-background;
+}
+
+.projects-link {
+  position: relative;
+  &::before {
+    content: "";
+    background-color: $color-dark;
+    position: absolute;
+    left: -20px;
+    top: 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+  }
+}

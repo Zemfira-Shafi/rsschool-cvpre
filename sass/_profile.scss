@@ -1,0 +1,21 @@
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0px;
+}
+
+.photo {
+  height: 400px;
+  width: auto;
+  border-radius: 50%;
+}
+
+.profile-name {
+  padding-left: 50px;
+  & p {
+    color: $color-dark;
+    margin-top: 20px;
+    letter-spacing: 0.03em;
+  }
+}
