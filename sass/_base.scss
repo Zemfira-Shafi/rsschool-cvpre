@@ -13,6 +13,9 @@ h1 {
   max-width: 400px;
   color: $color-dark;
   letter-spacing: 0.06em;
+  @include media-mobile {
+    font-size: 3.4rem;
+  }
 }
 
 h2 {
@@ -21,6 +24,9 @@ h2 {
   font-weight: 400;
   width: 90%;
   text-align: center;
+  @include media-mobile {
+    width: 100%;
+  }
 }
 
 .section-title {
@@ -60,8 +66,15 @@ h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  @include media-mobile {
+    flex-direction: column;
+    align-items: center;
+  }
   & section {
     width: 50%;
+    @include media-mobile {
+      width: 100%;
+    }
   }
 }
 

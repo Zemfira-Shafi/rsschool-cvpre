@@ -8,12 +8,39 @@
 .header-list {
   display: flex;
   justify-content: flex-end;
+  @include media-mobile {
+    display: block;
+    margin-top: 100px;
+    text-align: center;
+  }
 }
 
 .header-item {
   margin-left: 20px;
+  @include media-mobile {
+    margin: 20px 0px;
+  }
 }
 
 .header-link {
   color: $color-dark;
+}
+
+.header-nav {
+  @include media-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 320px;
+    height: 823px;
+    background-color: $color-light;
+    z-index: 100;
+    &.active {
+      height: 100%;
+      right: 0;
+      display: block;
+      overflow-y: auto;
+    }
+  }
 }
