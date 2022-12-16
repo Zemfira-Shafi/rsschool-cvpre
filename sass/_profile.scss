@@ -1,0 +1,33 @@
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0px;
+  @include media-mobile {
+    flex-direction: column;
+  }
+}
+
+.photo {
+  height: 300px;
+  width: auto;
+  border-radius: 50%;
+  @include media-mobile {
+    border-radius: 0%;
+  }
+  @include media-mobilesmall {
+    height: 250px;
+  }
+}
+
+.profile-name {
+  padding-left: 50px;
+  @include media-mobile {
+    padding-top: 50px;
+  }
+  & p {
+    color: $color-dark;
+    margin-top: 20px;
+    letter-spacing: 0.03em;
+  }
+}
